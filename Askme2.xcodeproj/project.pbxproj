@@ -146,8 +146,7 @@
 				00A9B16D1C7D67BD00129DEF /* ImageManager.h */,
 				00A9B16E1C7D67BD00129DEF /* ImageManager.m */,
 				00A9B1701C7D6A1B00129DEF /* cells */,
-				00A9B1531C7C962200129DEF /* HomeController.h */,
-				00A9B1541C7C962200129DEF /* HomeController.m */,
+				00A9B17D1C7DEA9000129DEF /* Controller */,
 				00A9B16B1C7CB8ED00129DEF /* Podfile */,
 				00A9B1251C7C91CE00129DEF /* Main.storyboard */,
 				00A9B14F1C7C929800129DEF /* f_one.json */,
@@ -204,6 +203,15 @@
 				00A9B1731C7D754A00129DEF /* ScrollViewCell.xib */,
 			);
 			name = cells;
+			sourceTree = "<group>";
+		};
+		00A9B17D1C7DEA9000129DEF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00A9B1531C7C962200129DEF /* HomeController.h */,
+				00A9B1541C7C962200129DEF /* HomeController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		EDB86918ED5B7F9E242D6B6B /* Frameworks */ = {

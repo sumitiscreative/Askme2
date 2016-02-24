@@ -10,4 +10,5 @@
 
 @interface OnlyImageCell : UITableViewCell
 @property(nonatomic, strong) IBOutlet UIImageView* imView;
+@property(nonatomic, strong) IBOutlet UILabel* title;
 @end

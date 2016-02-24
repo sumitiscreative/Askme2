@@ -3,32 +3,49 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnlyImageCell"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="temp1" rowHeight="140" id="6CA-15-JhA" customClass="OnlyImageCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="139"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="temp1" rowHeight="182" id="6CA-15-JhA" customClass="OnlyImageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="181"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6CA-15-JhA" id="6gc-f9-9a6">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="138"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kgh-Pd-QvM">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="138"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kgh-Pd-QvM">
+                        <rect key="frame" x="0.0" y="42" width="320" height="138"/>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today deals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdn-Lc-H4m">
+                        <rect key="frame" x="8" y="8" width="293" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="rgV-mh-3nh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Kgh-Pd-QvM" firstAttribute="leading" secondItem="6gc-f9-9a6" secondAttribute="leading" id="6Da-VB-jFJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Qdn-Lc-H4m" secondAttribute="trailing" constant="11" id="Fa5-8i-Sz8"/>
+                    <constraint firstItem="Qdn-Lc-H4m" firstAttribute="leading" secondItem="6gc-f9-9a6" secondAttribute="leadingMargin" id="Nrn-6g-Qh4"/>
+                    <constraint firstAttribute="trailing" secondItem="Kgh-Pd-QvM" secondAttribute="trailing" id="NsZ-ib-b3m"/>
                     <constraint firstAttribute="bottom" secondItem="Kgh-Pd-QvM" secondAttribute="bottom" id="T2K-Kl-hOt"/>
+                    <constraint firstItem="Kgh-Pd-QvM" firstAttribute="leading" secondItem="6gc-f9-9a6" secondAttribute="leading" id="a2e-Pn-AQw"/>
                     <constraint firstAttribute="trailing" secondItem="Kgh-Pd-QvM" secondAttribute="trailing" id="epA-bb-khZ"/>
-                    <constraint firstItem="Kgh-Pd-QvM" firstAttribute="top" secondItem="6gc-f9-9a6" secondAttribute="top" id="q3Z-pD-2OV"/>
+                    <constraint firstAttribute="bottom" secondItem="Kgh-Pd-QvM" secondAttribute="bottom" id="iGQ-Ng-CB9"/>
+                    <constraint firstItem="Qdn-Lc-H4m" firstAttribute="top" secondItem="6gc-f9-9a6" secondAttribute="topMargin" id="lIc-y8-lbV"/>
+                    <constraint firstItem="Kgh-Pd-QvM" firstAttribute="top" secondItem="6gc-f9-9a6" secondAttribute="top" constant="42" id="q3Z-pD-2OV"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="imView" destination="Kgh-Pd-QvM" id="cdP-yS-RwW"/>
+                <outlet property="title" destination="Qdn-Lc-H4m" id="1Y4-3l-UnF"/>
             </connections>
-            <point key="canvasLocation" x="196" y="378.5"/>
+            <point key="canvasLocation" x="196" y="357.5"/>
         </tableViewCell>
     </objects>
 </document>

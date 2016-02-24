@@ -11,6 +11,7 @@
 @interface ScrollViewCell : UITableViewCell <UIScrollViewDelegate>
 @property(nonatomic) IBOutlet UIScrollView* scrollView;
 @property(nonatomic) IBOutlet UIPageControl* pageControl;
+@property(nonatomic, strong) IBOutlet UILabel* title;
 
 -(void)createPageScrollWith:(NSArray*)items;
 @end

@@ -13,10 +13,16 @@
 @synthesize detailView,oldPrice;
 - (void)awakeFromNib {
     // Initialization code
-    detailView.layer.shadowColor = [UIColor blackColor].CGColor;
-    detailView.layer.shadowOffset = CGSizeMake(0, 2);
-    detailView.layer.shadowRadius = 1.0;
-    detailView.layer.shadowOpacity = 0.2;
+    self.backgroundColor = [UIColor colorWithRed:231 green:235 blue:244 alpha:1.0];
+    
+    self.layer.cornerRadius = 5;
+    self.layer.masksToBounds = YES;
+    self.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.layer.borderWidth = 0.5;
+    
+    self.layer.shadowColor = [UIColor blackColor].CGColor;
+    self.layer.shadowOffset = CGSizeMake(0,2);
+//    detailView.layer.shadowOpacity = 0.7;
     
     NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc] initWithString:self.oldPrice.text];
     [attributeString addAttribute:NSStrikethroughStyleAttributeName

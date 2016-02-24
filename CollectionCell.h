@@ -11,6 +11,7 @@
 @interface CollectionCell : UITableViewCell <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 @property (nonatomic, copy) NSArray* items;
 @property(nonatomic) IBOutlet UICollectionView* collectionView;
+@property(nonatomic, strong) IBOutlet UILabel* title;
 
 -(void)createCollectionWithItems:(NSArray*)items;
 @end

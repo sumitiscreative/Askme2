@@ -10,4 +10,10 @@
 
 @implementation OnlyImageCell
 @synthesize imView;
+
+- (void)awakeFromNib {
+    // Initialization code
+    self.backgroundColor = [UIColor colorWithRed:231 green:235 blue:244 alpha:1.0];
+}
+
 @end

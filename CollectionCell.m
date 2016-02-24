@@ -16,6 +16,8 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    self.backgroundColor = [UIColor colorWithRed:231 green:235 blue:244 alpha:1.0];
+    collectionView.backgroundColor = [UIColor colorWithRed:231 green:235 blue:244 alpha:1.0];
 //    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
 //    collectionView = [[UICollectionView alloc] initWithFrame:collectionView.frame collectionViewLayout:layout];
     
@@ -28,6 +30,9 @@
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    NSDictionary* thisItem = [items objectAtIndex:indexPath.row];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[thisItem objectForKey:@"web-url"]]];
     
 }
 
@@ -43,6 +48,8 @@
     
     CollectionViewCell *cell = [collectionView1 dequeueReusableCellWithReuseIdentifier:kCollectionViewCell forIndexPath:indexPath];
     
+    cell.layer.cornerRadius = 5;
+    cell.layer.masksToBounds = YES;
     
     NSDictionary* thisItem = [items objectAtIndex:indexPath.row];
     NSString* imageURL = ([thisItem objectForKey:@"image"]) ? [thisItem objectForKey:@"image"] : [thisItem objectForKey:@"image_url"];
@@ -60,7 +67,7 @@
 }
 
 -(CGSize)collectionView:(UICollectionView *)collectionView1 layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    return CGSizeMake((collectionView1.frame.size.width)/3, self.frame.size.height-40);
+    return CGSizeMake((collectionView1.frame.size.width)/3, collectionView.frame.size.height-20);
 }
 
 @end

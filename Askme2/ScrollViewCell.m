@@ -14,12 +14,15 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    self.backgroundColor = [UIColor colorWithRed:231 green:235 blue:244 alpha:1.0];
+    scrollView.backgroundColor = [UIColor colorWithRed:231 green:235 blue:244 alpha:1.0];
     scrollView.pagingEnabled = YES;
     scrollView.maximumZoomScale = 1.0;
     scrollView.minimumZoomScale = 1.0;
     scrollView.clipsToBounds = YES;
 
     scrollView.showsHorizontalScrollIndicator = NO;
+    scrollView.showsVerticalScrollIndicator = NO;
     scrollView.delegate = self;
 }
 
@@ -39,7 +42,7 @@
         
         NSDictionary *thisItem = [items objectAtIndex:i];
         UIImageView* imView = [[UIImageView alloc] initWithFrame:CGRectMake(i * scrollView.frame.size.width, 0, scrollView.frame.size.width, scrollView.frame.size.height)];
-        
+        imView.contentMode = UIViewContentModeScaleAspectFit;
         NSString* imageURL = ([thisItem objectForKey:@"image"]) ? [thisItem objectForKey:@"image"] : [thisItem objectForKey:@"image_url"];
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
@@ -53,8 +56,13 @@
         [scrollView addSubview:imView];
     }
     
-    pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, scrollView.frame.size.height-30, scrollView.frame.size.width, 20)];
-    pageControl.center = CGPointMake(self.contentView.center.x, pageControl.frame.origin.y);
+    pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(10, scrollView.frame.size.height-30, scrollView.frame.size.width/6, 20)];
+    CGRect frame1 = pageControl.frame;
+    frame1.size.width = [pageControl sizeForNumberOfPages:[items count]].width;
+    pageControl.frame = frame1;
+    
+    pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+    pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
     pageControl.numberOfPages = [items count];
     pageControl.currentPage = 0;
     [pageControl addTarget:self action:@selector(changePage:) forControlEvents:UIControlEventValueChanged];
