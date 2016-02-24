@@ -28,6 +28,7 @@
 		00A9B1791C7D825D00129DEF /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9B1771C7D825D00129DEF /* CollectionViewCell.m */; };
 		00A9B17A1C7D825D00129DEF /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00A9B1781C7D825D00129DEF /* CollectionViewCell.xib */; };
 		00A9B17C1C7DC7C000129DEF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A9B17B1C7DC7C000129DEF /* QuartzCore.framework */; };
+		00A9B1801C7DFB6100129DEF /* Items.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9B17F1C7DFB6100129DEF /* Items.m */; };
 		93394349E9CE901A0A671405 /* libPods-Askme2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8201EB43297EE2AC882D33 /* libPods-Askme2.a */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,8 @@
 		00A9B1771C7D825D00129DEF /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		00A9B1781C7D825D00129DEF /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		00A9B17B1C7DC7C000129DEF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		00A9B17E1C7DFB6100129DEF /* Items.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Items.h; sourceTree = "<group>"; };
+		00A9B17F1C7DFB6100129DEF /* Items.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Items.m; sourceTree = "<group>"; };
 		7E833F5782699C2F6019F052 /* Pods-Askme2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Askme2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Askme2/Pods-Askme2.debug.xcconfig"; sourceTree = "<group>"; };
 		8CB73ED9EA01CFDF7A4C1B24 /* Pods-Askme2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Askme2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Askme2/Pods-Askme2.release.xcconfig"; sourceTree = "<group>"; };
 		8F8201EB43297EE2AC882D33 /* libPods-Askme2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Askme2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +148,8 @@
 				00A9B1201C7C91CE00129DEF /* AppDelegate.m */,
 				00A9B16D1C7D67BD00129DEF /* ImageManager.h */,
 				00A9B16E1C7D67BD00129DEF /* ImageManager.m */,
+				00A9B17E1C7DFB6100129DEF /* Items.h */,
+				00A9B17F1C7DFB6100129DEF /* Items.m */,
 				00A9B1701C7D6A1B00129DEF /* cells */,
 				00A9B17D1C7DEA9000129DEF /* Controller */,
 				00A9B16B1C7CB8ED00129DEF /* Podfile */,
@@ -423,6 +428,7 @@
 				00A9B1741C7D754A00129DEF /* ScrollViewCell.m in Sources */,
 				00A9B1551C7C962200129DEF /* HomeController.m in Sources */,
 				00A9B1631C7C9AFD00129DEF /* OnlyImageCell.m in Sources */,
+				00A9B1801C7DFB6100129DEF /* Items.m in Sources */,
 				00A9B1661C7C9B0F00129DEF /* CollectionCell.m in Sources */,
 				00A9B16F1C7D67BD00129DEF /* ImageManager.m in Sources */,
 				00A9B1211C7C91CE00129DEF /* AppDelegate.m in Sources */,

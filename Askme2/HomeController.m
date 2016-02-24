@@ -8,6 +8,8 @@
 
 #import "HomeController.h"
 
+#import "Items.h"
+
 #import "OnlyImageCell.h"
 #import "ScrollViewCell.h"
 #import "CollectionCell.h"
@@ -45,8 +47,10 @@
     tableView.layer.masksToBounds = YES;
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
-    NSString* path = [[NSBundle mainBundle] pathForResource:@"f_one" ofType:@"json"];
-    dataArray = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:path] options:kNilOptions error:nil];
+//    NSString* path = [[NSBundle mainBundle] pathForResource:@"f_one" ofType:@"json"];
+//    dataArray = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:path] options:kNilOptions error:nil];
+//    
+    dataArray = [Items readItemsFromOne];
 }
 
 #pragma mark -- tableview
