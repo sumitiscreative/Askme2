@@ -29,12 +29,17 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
+
+    [[UIImage imageNamed:@"nav-bar"]
+     resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0) resizingMode:UIImageResizingModeStretch];
+
+    [[UINavigationBar appearance] setBackgroundImage:[[UIImage imageNamed:@"nav-bar.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)] forBarMetrics:UIBarMetricsDefault];
     
     [self.tableView registerNib:[UINib nibWithNibName:@"OnlyImageCell" bundle:nil] forCellReuseIdentifier:kTemp1];
     [self.tableView registerNib:[UINib nibWithNibName:@"CollectionCell" bundle:nil] forCellReuseIdentifier:kTemp2];
     [self.tableView registerNib:[UINib nibWithNibName:@"ScrollViewCell" bundle:nil] forCellReuseIdentifier:kTemp3];
     
-    NSString* path = [[NSBundle mainBundle] pathForResource:@"f_one" ofType:@"json"];
+    NSString* path = [[NSBundle mainBundle] pathForResource:@"f_two" ofType:@"json"];
     dataArray = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:path] options:kNilOptions error:nil];
 }
 

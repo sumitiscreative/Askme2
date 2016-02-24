@@ -50,6 +50,7 @@
                     <constraint firstItem="gfz-F8-K6Y" firstAttribute="leading" secondItem="jh6-FU-ZMn" secondAttribute="leading" id="wOa-Om-WGy"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="collectionView" destination="gfz-F8-K6Y" id="IMV-5r-PbQ"/>
             </connections>

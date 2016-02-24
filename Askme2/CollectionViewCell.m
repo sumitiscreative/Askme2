@@ -10,13 +10,20 @@
 #import <QuartzCore/QuartzCore.h>
 
 @implementation CollectionViewCell
-@synthesize detailView;
+@synthesize detailView,oldPrice;
 - (void)awakeFromNib {
     // Initialization code
     detailView.layer.shadowColor = [UIColor blackColor].CGColor;
     detailView.layer.shadowOffset = CGSizeMake(0, 2);
     detailView.layer.shadowRadius = 1.0;
     detailView.layer.shadowOpacity = 0.2;
+    
+    NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc] initWithString:self.oldPrice.text];
+    [attributeString addAttribute:NSStrikethroughStyleAttributeName
+                            value:@2
+                            range:NSMakeRange(0, [attributeString length])];
+    
+    self.oldPrice.attributedText = attributeString;
 }
 
 @end

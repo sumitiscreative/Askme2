@@ -52,6 +52,7 @@
         
         dispatch_async(dispatch_get_main_queue(), ^{
             cell.mainImage.image = [UIImage imageWithData:imageData];
+            cell.title.text = [thisItem objectForKey:@"label"];
         });
     });
     
