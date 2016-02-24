@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HomeController.h
 //  Askme2
 //
 //  Created by Sumit Kumar Gupta on 23/02/16.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface HomeController : UIViewController
+@property (nonatomic, strong) IBOutlet UITableView* tableView;
 
 @end
-

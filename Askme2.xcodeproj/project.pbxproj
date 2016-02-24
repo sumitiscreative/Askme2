@@ -9,12 +9,23 @@
 /* Begin PBXBuildFile section */
 		00A9B11E1C7C91CE00129DEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9B11D1C7C91CE00129DEF /* main.m */; };
 		00A9B1211C7C91CE00129DEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9B1201C7C91CE00129DEF /* AppDelegate.m */; };
-		00A9B1241C7C91CE00129DEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9B1231C7C91CE00129DEF /* ViewController.m */; };
 		00A9B1271C7C91CE00129DEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A9B1251C7C91CE00129DEF /* Main.storyboard */; };
 		00A9B1291C7C91CE00129DEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A9B1281C7C91CE00129DEF /* Assets.xcassets */; };
 		00A9B12C1C7C91CE00129DEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A9B12A1C7C91CE00129DEF /* LaunchScreen.storyboard */; };
 		00A9B1371C7C91CE00129DEF /* Askme2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9B1361C7C91CE00129DEF /* Askme2Tests.m */; };
 		00A9B1421C7C91CE00129DEF /* Askme2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9B1411C7C91CE00129DEF /* Askme2UITests.m */; };
+		00A9B1511C7C929800129DEF /* f_one.json in Resources */ = {isa = PBXBuildFile; fileRef = 00A9B14F1C7C929800129DEF /* f_one.json */; };
+		00A9B1521C7C929800129DEF /* f_two.json in Resources */ = {isa = PBXBuildFile; fileRef = 00A9B1501C7C929800129DEF /* f_two.json */; };
+		00A9B1551C7C962200129DEF /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9B1541C7C962200129DEF /* HomeController.m */; };
+		00A9B1631C7C9AFD00129DEF /* OnlyImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9B1621C7C9AFD00129DEF /* OnlyImageCell.m */; };
+		00A9B1661C7C9B0F00129DEF /* CollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9B1651C7C9B0F00129DEF /* CollectionCell.m */; };
+		00A9B1681C7CB4DB00129DEF /* OnlyImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00A9B1671C7CB4DB00129DEF /* OnlyImageCell.xib */; };
+		00A9B16A1C7CB59000129DEF /* CollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00A9B1691C7CB59000129DEF /* CollectionCell.xib */; };
+		00A9B16C1C7CB8ED00129DEF /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 00A9B16B1C7CB8ED00129DEF /* Podfile */; };
+		00A9B16F1C7D67BD00129DEF /* ImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9B16E1C7D67BD00129DEF /* ImageManager.m */; };
+		00A9B1741C7D754A00129DEF /* ScrollViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9B1721C7D754A00129DEF /* ScrollViewCell.m */; };
+		00A9B1751C7D754A00129DEF /* ScrollViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00A9B1731C7D754A00129DEF /* ScrollViewCell.xib */; };
+		93394349E9CE901A0A671405 /* libPods-Askme2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8201EB43297EE2AC882D33 /* libPods-Askme2.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +50,6 @@
 		00A9B11D1C7C91CE00129DEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		00A9B11F1C7C91CE00129DEF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		00A9B1201C7C91CE00129DEF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		00A9B1221C7C91CE00129DEF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		00A9B1231C7C91CE00129DEF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		00A9B1261C7C91CE00129DEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00A9B1281C7C91CE00129DEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00A9B12B1C7C91CE00129DEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +60,26 @@
 		00A9B13D1C7C91CE00129DEF /* Askme2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Askme2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A9B1411C7C91CE00129DEF /* Askme2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Askme2UITests.m; sourceTree = "<group>"; };
 		00A9B1431C7C91CE00129DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00A9B14F1C7C929800129DEF /* f_one.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = f_one.json; sourceTree = "<group>"; };
+		00A9B1501C7C929800129DEF /* f_two.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = f_two.json; sourceTree = "<group>"; };
+		00A9B1531C7C962200129DEF /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		00A9B1541C7C962200129DEF /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		00A9B1561C7C97E200129DEF /* Askme2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Askme2-Bridging-Header.h"; sourceTree = "<group>"; };
+		00A9B1611C7C9AFD00129DEF /* OnlyImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OnlyImageCell.h; path = ../OnlyImageCell.h; sourceTree = "<group>"; };
+		00A9B1621C7C9AFD00129DEF /* OnlyImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OnlyImageCell.m; path = ../OnlyImageCell.m; sourceTree = "<group>"; };
+		00A9B1641C7C9B0F00129DEF /* CollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionCell.h; path = ../CollectionCell.h; sourceTree = "<group>"; };
+		00A9B1651C7C9B0F00129DEF /* CollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionCell.m; path = ../CollectionCell.m; sourceTree = "<group>"; };
+		00A9B1671C7CB4DB00129DEF /* OnlyImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnlyImageCell.xib; sourceTree = "<group>"; };
+		00A9B1691C7CB59000129DEF /* CollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCell.xib; sourceTree = "<group>"; };
+		00A9B16B1C7CB8ED00129DEF /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		00A9B16D1C7D67BD00129DEF /* ImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageManager.h; sourceTree = "<group>"; };
+		00A9B16E1C7D67BD00129DEF /* ImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageManager.m; sourceTree = "<group>"; };
+		00A9B1711C7D754A00129DEF /* ScrollViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewCell.h; sourceTree = "<group>"; };
+		00A9B1721C7D754A00129DEF /* ScrollViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewCell.m; sourceTree = "<group>"; };
+		00A9B1731C7D754A00129DEF /* ScrollViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScrollViewCell.xib; sourceTree = "<group>"; };
+		7E833F5782699C2F6019F052 /* Pods-Askme2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Askme2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Askme2/Pods-Askme2.debug.xcconfig"; sourceTree = "<group>"; };
+		8CB73ED9EA01CFDF7A4C1B24 /* Pods-Askme2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Askme2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Askme2/Pods-Askme2.release.xcconfig"; sourceTree = "<group>"; };
+		8F8201EB43297EE2AC882D33 /* libPods-Askme2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Askme2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93394349E9CE901A0A671405 /* libPods-Askme2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +115,8 @@
 				00A9B1351C7C91CE00129DEF /* Askme2Tests */,
 				00A9B1401C7C91CE00129DEF /* Askme2UITests */,
 				00A9B11A1C7C91CE00129DEF /* Products */,
+				FA8B6507470ACE0E9FAFF826 /* Pods */,
+				EDB86918ED5B7F9E242D6B6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,13 +135,20 @@
 			children = (
 				00A9B11F1C7C91CE00129DEF /* AppDelegate.h */,
 				00A9B1201C7C91CE00129DEF /* AppDelegate.m */,
-				00A9B1221C7C91CE00129DEF /* ViewController.h */,
-				00A9B1231C7C91CE00129DEF /* ViewController.m */,
+				00A9B16D1C7D67BD00129DEF /* ImageManager.h */,
+				00A9B16E1C7D67BD00129DEF /* ImageManager.m */,
+				00A9B1701C7D6A1B00129DEF /* cells */,
+				00A9B1531C7C962200129DEF /* HomeController.h */,
+				00A9B1541C7C962200129DEF /* HomeController.m */,
+				00A9B16B1C7CB8ED00129DEF /* Podfile */,
 				00A9B1251C7C91CE00129DEF /* Main.storyboard */,
+				00A9B14F1C7C929800129DEF /* f_one.json */,
+				00A9B1501C7C929800129DEF /* f_two.json */,
 				00A9B1281C7C91CE00129DEF /* Assets.xcassets */,
 				00A9B12A1C7C91CE00129DEF /* LaunchScreen.storyboard */,
 				00A9B12D1C7C91CE00129DEF /* Info.plist */,
 				00A9B11C1C7C91CE00129DEF /* Supporting Files */,
+				00A9B1561C7C97E200129DEF /* Askme2-Bridging-Header.h */,
 			);
 			path = Askme2;
 			sourceTree = "<group>";
@@ -140,6 +179,39 @@
 			path = Askme2UITests;
 			sourceTree = "<group>";
 		};
+		00A9B1701C7D6A1B00129DEF /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				00A9B1611C7C9AFD00129DEF /* OnlyImageCell.h */,
+				00A9B1621C7C9AFD00129DEF /* OnlyImageCell.m */,
+				00A9B1671C7CB4DB00129DEF /* OnlyImageCell.xib */,
+				00A9B1641C7C9B0F00129DEF /* CollectionCell.h */,
+				00A9B1651C7C9B0F00129DEF /* CollectionCell.m */,
+				00A9B1691C7CB59000129DEF /* CollectionCell.xib */,
+				00A9B1711C7D754A00129DEF /* ScrollViewCell.h */,
+				00A9B1721C7D754A00129DEF /* ScrollViewCell.m */,
+				00A9B1731C7D754A00129DEF /* ScrollViewCell.xib */,
+			);
+			name = cells;
+			sourceTree = "<group>";
+		};
+		EDB86918ED5B7F9E242D6B6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F8201EB43297EE2AC882D33 /* libPods-Askme2.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA8B6507470ACE0E9FAFF826 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E833F5782699C2F6019F052 /* Pods-Askme2.debug.xcconfig */,
+				8CB73ED9EA01CFDF7A4C1B24 /* Pods-Askme2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00A9B1461C7C91CE00129DEF /* Build configuration list for PBXNativeTarget "Askme2" */;
 			buildPhases = (
+				0112519424036C039FEE461B /* Check Pods Manifest.lock */,
 				00A9B1151C7C91CE00129DEF /* Sources */,
 				00A9B1161C7C91CE00129DEF /* Frameworks */,
 				00A9B1171C7C91CE00129DEF /* Resources */,
+				1062D452928E65A1676C33D5 /* Embed Pods Frameworks */,
+				9B206A34D0759F04ADF2A4A8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,8 +318,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A9B1521C7C929800129DEF /* f_two.json in Resources */,
+				00A9B1681C7CB4DB00129DEF /* OnlyImageCell.xib in Resources */,
+				00A9B16C1C7CB8ED00129DEF /* Podfile in Resources */,
 				00A9B12C1C7C91CE00129DEF /* LaunchScreen.storyboard in Resources */,
+				00A9B1511C7C929800129DEF /* f_one.json in Resources */,
 				00A9B1291C7C91CE00129DEF /* Assets.xcassets in Resources */,
+				00A9B16A1C7CB59000129DEF /* CollectionCell.xib in Resources */,
+				00A9B1751C7D754A00129DEF /* ScrollViewCell.xib in Resources */,
 				00A9B1271C7C91CE00129DEF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,12 +346,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0112519424036C039FEE461B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1062D452928E65A1676C33D5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Askme2/Pods-Askme2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B206A34D0759F04ADF2A4A8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Askme2/Pods-Askme2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		00A9B1151C7C91CE00129DEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00A9B1241C7C91CE00129DEF /* ViewController.m in Sources */,
+				00A9B1741C7D754A00129DEF /* ScrollViewCell.m in Sources */,
+				00A9B1551C7C962200129DEF /* HomeController.m in Sources */,
+				00A9B1631C7C9AFD00129DEF /* OnlyImageCell.m in Sources */,
+				00A9B1661C7C9B0F00129DEF /* CollectionCell.m in Sources */,
+				00A9B16F1C7D67BD00129DEF /* ImageManager.m in Sources */,
 				00A9B1211C7C91CE00129DEF /* AppDelegate.m in Sources */,
 				00A9B11E1C7C91CE00129DEF /* main.m in Sources */,
 			);
@@ -411,23 +544,32 @@
 		};
 		00A9B1471C7C91CE00129DEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E833F5782699C2F6019F052 /* Pods-Askme2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Askme2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.testapp.Askme2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Askme2/Askme2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		00A9B1481C7C91CE00129DEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CB73ED9EA01CFDF7A4C1B24 /* Pods-Askme2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Askme2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.testapp.Askme2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Askme2/Askme2-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -498,6 +640,7 @@
 				00A9B1481C7C91CE00129DEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00A9B1491C7C91CE00129DEF /* Build configuration list for PBXNativeTarget "Askme2Tests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +649,7 @@
 				00A9B14B1C7C91CE00129DEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00A9B14C1C7C91CE00129DEF /* Build configuration list for PBXNativeTarget "Askme2UITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +658,7 @@
 				00A9B14E1C7C91CE00129DEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
