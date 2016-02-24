@@ -11,17 +11,30 @@
 
 @implementation ScrollViewCell
 @synthesize scrollView,pageControl;
+
 - (void)awakeFromNib {
     // Initialization code
     scrollView.pagingEnabled = YES;
+    scrollView.maximumZoomScale = 1.0;
+    scrollView.minimumZoomScale = 1.0;
+    scrollView.clipsToBounds = YES;
+
     scrollView.showsHorizontalScrollIndicator = NO;
     scrollView.delegate = self;
 }
 
 -(void)createPageScrollWith:(NSArray*)items{
     
-    scrollView.contentSize = CGSizeMake(scrollView.frame.size.width*[items count], scrollView.frame.size.height);
+    CGFloat desiredWidth = self.frame.size.width;
+    CGFloat desiredHeight = self.frame.size.height;
+    CGRect frame = scrollView.frame;
+    frame.size.width = desiredWidth;
+    frame.size.height = desiredHeight;
+    [scrollView setFrame:frame];
+    
+    scrollView.contentSize = CGSizeMake(desiredWidth*[items count], scrollView.frame.size.height);
 
+    // create paginated scroll 
     for (int i=0; i<[items count]; i++) {
         
         NSDictionary *thisItem = [items objectAtIndex:i];
@@ -34,8 +47,7 @@
             
             dispatch_async(dispatch_get_main_queue(), ^{
                 imView.image = [UIImage imageWithData:imageData];
-                NSLog(@"Image url used: %@",imageURL);
-                [self layoutIfNeeded];
+                NSLog(@"%@ %ld",imageURL,[items count]);
             });
         });
         [scrollView addSubview:imView];
@@ -59,6 +71,10 @@
 -(void) scrollViewDidEndDecelerating:(UIScrollView *)scrollView1  {
     NSInteger pageNumber = roundf(scrollView1.contentOffset.x / (scrollView1.frame.size.width));
     pageControl.currentPage = pageNumber;
+}
+
+-(void)scrollViewDidScroll:(UIScrollView *)aScrollView{
+    [aScrollView setContentOffset: CGPointMake(aScrollView.contentOffset.x,0)];
 }
 
 @end

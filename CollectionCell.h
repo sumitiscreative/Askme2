@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CollectionCell : UITableViewCell
+@interface CollectionCell : UITableViewCell <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
+@property (nonatomic, copy) NSArray* items;
 @property(nonatomic) IBOutlet UICollectionView* collectionView;
+
+-(void)createCollectionWithItems:(NSArray*)items;
 @end

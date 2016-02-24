@@ -41,12 +41,12 @@
 #pragma mark -- tableview
 -(UITableViewCell *)tableView:(UITableView *)tableView1 cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    OnlyImageCell *cell = [tableView1 dequeueReusableCellWithIdentifier:kTemp1 forIndexPath:indexPath];
-    
     NSDictionary* dict = [dataArray objectAtIndex:indexPath.row];
 
     if ([[dict objectForKey:@"template"] isEqualToString:@"product-template-1"]) {
         
+        OnlyImageCell *cell = [tableView1 dequeueReusableCellWithIdentifier:kTemp1 forIndexPath:indexPath];
+
         NSString *iamgeURL = [[[dict objectForKey:@"items"] objectAtIndex:0] objectForKey:@"image"];
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
             NSData* imageData = [ImageManager cacheAnyImageWithUrl:iamgeURL];
@@ -58,17 +58,31 @@
         return cell;
         
     }else if ([[dict objectForKey:@"template"] isEqualToString:@"product-template-2"]) {
-        
+        CollectionCell *cell = [tableView1 dequeueReusableCellWithIdentifier:kTemp2 forIndexPath:indexPath];
+        cell.items = [[dict objectForKey:@"items"] copy];
+        [cell createCollectionWithItems:[dict objectForKey:@"items"]];
+        return cell;
     }else if ([[dict objectForKey:@"template"] isEqualToString:@"product-template-3"]) {
+        
         ScrollViewCell *cell = [tableView1 dequeueReusableCellWithIdentifier:kTemp3 forIndexPath:indexPath];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         [cell createPageScrollWith:[dict objectForKey:@"items"]];
         return cell;
         
+    }else{
+        OnlyImageCell *cell = [tableView1 dequeueReusableCellWithIdentifier:kTemp1 forIndexPath:indexPath];
+        
+        NSString *iamgeURL = [[[dict objectForKey:@"items"] objectAtIndex:0] objectForKey:@"image"];
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+            NSData* imageData = [ImageManager cacheAnyImageWithUrl:iamgeURL];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                cell.imView.image = [UIImage imageWithData:imageData];
+            });
+        });
+        
+        return cell;
     }
-
     
-    
-    return cell;
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -80,6 +94,17 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    
+    NSDictionary *dict = [dataArray objectAtIndex:indexPath.row];
+    if ([[dict objectForKey:@"template"] isEqualToString:@"product-template-1"]) {
+        return 200.0f;
+    }else if ([[dict objectForKey:@"template"] isEqualToString:@"product-template-2"]) {
+        return 330.0f;
+    }else if ([[dict objectForKey:@"template"] isEqualToString:@"product-template-3"]) {
+        return 200.0f;
+    }
+
     return 140.0f;
 }
 
