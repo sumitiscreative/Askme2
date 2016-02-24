@@ -14,7 +14,6 @@
 
 #import "ImageManager.h"
 
-
 #define kTemp1 @"temp1"
 #define kTemp2 @"temp2"
 #define kTemp3 @"temp3"
